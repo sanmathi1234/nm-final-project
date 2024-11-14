@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+       body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            background-color: black;
+            padding: 25px;
+       }
+       .container{
+            background-color:white;
+            max-width: 50%;
+            padding: 20px;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight:bold;
+            display: block;
+            margin-bottom: 7px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #169ce4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #380cd7;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Register</h2>
+    <form action="/submit-registration" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="UPIID">UPI ID</label>
+            <input type="text" id="UPI ID" name="" required>
+        </div>
+        <div class="form-group">
+            <label for="contactno">contactno:</label>
+            <input type="text" id="contactno" name="contactno" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Register">
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>
